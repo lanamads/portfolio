@@ -9,22 +9,24 @@ body {
 
 /* Style for the home section (banner) */
 .banner {
+  position: relative; /* Add position relative */
+  z-index: 2; /* Set higher z-index to ensure it's on top of Vanta.js background */
   text-align: center;
   padding: 50px 20px;
 }
 
-.banner h1 {
-  margin-bottom: 10px;
+.text-container {
+  position: relative; /* Ensure the text container stays in place */
+  z-index: 2; /* Set higher z-index */
 }
 
-.banner p {
-  margin: 0;
-}
-
-/* Style for the Vanta.js animation container */
 #vanta-element {
-  width: 100%; /* Ensure the container fills the entire width */
-  height: 100vh; /* Set a fixed height to cover the viewport vertically */
+  position: absolute; /* Position the Vanta.js element */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 1; /* Set lower z-index to be behind the text */
 }
 
 
