@@ -9,8 +9,6 @@ body {
 
 /* Style for the home section (banner) */
 .banner {
-  background-color: #FDC4EC;
-  color: white;
   text-align: center;
   padding: 50px 20px;
 }
@@ -21,6 +19,12 @@ body {
 
 .banner p {
   margin: 0;
+}
+
+/* Style for the Vanta.js animation container */
+#vanta-element {
+  width: 100%; /* Ensure the container fills the entire width */
+  height: 100vh; /* Set a fixed height to cover the viewport vertically */
 }
 
 

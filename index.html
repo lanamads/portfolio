@@ -18,11 +18,21 @@
 
 <!-- Home section (banner) -->
 <section id="home" class="banner">
-  <script src="three.r134.min.js"></script>
-  <script src="vanta.fog.min.js"></script>
-  <script>
+  <div id="vanta-element"></div> <!-- Add a container for Vanta.js -->
+  <br>
+  <h1>Welcome to My Portfolio</h1>
+  <p>Hello! I'm Lana Madsen. I'm a second year BCIS student at Auckland University of Technology,
+  <br>majoring in Software Development.</p>
+</section>
+
+<!-- Include the Vanta.js and Three.js scripts -->
+<script src="three.r134.min.js"></script>
+<script src="vanta.fog.min.js"></script>
+
+<!-- Initialize Vanta.js -->
+<script>
   VANTA.FOG({
-    el: "#your-element-selector",
+    el: "#vanta-element", // Specify the ID of the container element
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
@@ -34,12 +44,7 @@
     speed: 2.00,
     zoom: 0.70
   })
-  </script>
-<br>
-  <h1>Welcome to My Portfolio</h1>
-  <p>Hello! I'm Lana Madsen. I'm a second year BCIS student at Auckland University of Technology,
-  <br>majoring in Software Development.</p>
-</section>
+</script>
 
 <!-- Site navigation menu -->
 <nav class="navbar">
