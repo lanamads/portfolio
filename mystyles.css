@@ -3,9 +3,9 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;;
   color: black;
-  background-color: #F7F7F7;
+  background-color: #F9FAFF;
 }
 
 /* Style for the home section (banner) */
@@ -117,7 +117,6 @@ body {
 
 /* Project section styles */
 #projects {
-  background-color: #FFFAFE;
   color: #333;
   text-align: center;
   padding: 50px;
@@ -125,7 +124,6 @@ body {
 
 /* Skills section styles */
 #skills {
-  background-color: #FFFAFE;
   color: #333;
   text-align: center;
   padding: 50px;
@@ -160,7 +158,6 @@ body {
 
 /* Experience section styles 
 #experience {
-  background-color: #FFFAFE;
   color: #333;
   text-align: center;
   padding: 50px;
@@ -168,7 +165,6 @@ body {
 
 /* Education section styles */
 #education {
-  background-color: #FFFAFE;
   color: #333;
   text-align: center;
   padding: 50px;
@@ -211,7 +207,6 @@ body {
 
 /* Contact section styles */
 #contact {
-  background-color: #FFFAFE;
   color: #333;
   text-align: center;
   padding: 50px;
