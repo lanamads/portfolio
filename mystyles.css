@@ -2,6 +2,7 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   background-color: #F7F7F7;
@@ -9,26 +10,80 @@ body {
 
 /* Style for the home section (banner) */
 .banner {
-  position: relative; /* Add position relative */
-  z-index: 2; /* Set higher z-index to ensure it's on top of Vanta.js background */
+  position: relative;
+  z-index: 2;
+  background: radial-gradient(ellipse at bottom, #AFC6FF, #C8EEEF);
   text-align: center;
   padding: 50px 20px;
 }
 
-.text-container {
+.home-container {
   position: relative; /* Ensure the text container stays in place */
-  z-index: 2; /* Set higher z-index */
+  z-index: 2;
 }
 
-#vanta-element {
-  position: absolute; /* Position the Vanta.js element */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  z-index: 1; /* Set lower z-index to be behind the text */
+.star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(-45deg, #FFFEE8, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #fff);
+  animation: tail 3s ease-in-out infinite,
+             falling 3s ease-in-out;
 }
 
+@keyframes tail {
+  0%{
+    width: 0px;
+  }
+  30%{
+    width: 100px;
+  }
+  100%{
+    width: 0;
+  }
+}
+
+@keyframes falling {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(400px);
+  }
+}
+
+.star::before, .star::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #FFFEE8, rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3s ease-in-out infinite;
+}
+
+@keyframes shining {
+  0%{
+    width: 0px;
+  }
+  50%{
+    width: 30px;
+  }
+  100%{
+    width: 0;
+  }
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
 
 /* Style for the navigation menu */
 .navbar {
