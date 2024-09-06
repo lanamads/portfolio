@@ -12,6 +12,15 @@ body {
   background-color: #fff;
 }
 
+/* Styling for intro paragraph */
+#intro {
+  margin: 0 auto;
+  max-width: 550px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
 /* General styling for headers */
 h1, h2 {
   font-family: 'Roboto', sans-serif;
