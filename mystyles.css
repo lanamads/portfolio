@@ -224,6 +224,7 @@ h2 {
 .card {
   width: 400px;
   height: 500px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border: 1px solid #ddd;
@@ -498,8 +499,8 @@ body.dark-mode .card-link:hover {
   }
 
   .card {
-    width: 70%; /* Make the cards take full width on smaller screens */
-    max-width: 400px;
+    width: 90%;
+    max-width: 350px; /* Adjust the width on smaller screens */
     margin: 0 auto; /* Center the cards on the page */
   }
 }
