@@ -396,7 +396,7 @@ body.dark-mode .mode-toggle i {
 }
 
 body.dark-mode .mode-toggle:hover {
-  background-color: #AFC6FF;
+  background-color: #001d53;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
