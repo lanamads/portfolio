@@ -26,6 +26,11 @@
       src="https://kit.fontawesome.com/513ac6ecfd.js"
       crossorigin="anonymous"
     ></script>
+
+    <!--AOS styling-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Include AOS JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <!-- Home section (banner) -->
@@ -81,7 +86,7 @@
     </nav>
 
     <!-- Other sections -->
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-offset="200">
       <br /><br />
       <h2>Projects Section</h2>
       <!-- Content for the Projects section -->
@@ -89,7 +94,7 @@
 
     <!-- Skills section -->
     <!-- Using Devicon Icons -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-up" data-aos-offset="200">
       <br /><br />
       <h2>My Skills</h2>
       <div class="skill-container">
@@ -162,7 +167,7 @@
       </div>
     </section>
 
-    <section id="education">
+    <section id="education" data-aos="fade-up" data-aos-offset="200">
       <br /><br />
       <h2>My Education</h2>
       <!-- Education Entry -->
@@ -193,5 +198,13 @@ section to be added later when have relevant work experience
     <button id="mode-toggle" class="mode-toggle">
       <i class="fa-solid fa-sun"></i>
     </button>
+
+        <!-- Initialize AOS -->
+        <script>
+          AOS.init({
+            duration: 1000, // Duration of animations in milliseconds
+            once: true, // Whether animation should happen only once or every time you scroll up/down
+          });
+        </script>
   </body>
 </html>
