@@ -356,3 +356,19 @@ body.dark-mode #education {
 body.dark-mode .education-entry {
   background-color: #313131;
 }
+
+@media (max-width: 768px) {
+  .education-entry {
+    flex-direction: column; /* Stack content vertically on small screens */
+    text-align: center; /* Center-align text content */
+  }
+
+  .education-entry img {
+    max-width: 100px; /* Ensure the image is still appropriately sized */
+    margin: 0 auto 20px; /* Center the image and add space below */
+  }
+
+  .education-entry .text-content {
+    text-align: center; /* Center-align the text content */
+  }
+}
