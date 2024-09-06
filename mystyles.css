@@ -47,7 +47,7 @@ h2 {
 /* Style for the home section (banner) */
 .banner {
   position: relative;
-  height: 30vh;
+  height: 35vh;
   z-index: 2;
   background: radial-gradient(ellipse at bottom, #AFC6FF, #C8EEEF);
   text-align: center;
@@ -498,8 +498,8 @@ body.dark-mode .card-link:hover {
   }
 
   .card {
-    width: 90%; /* Make the cards take full width on smaller screens */
-    max-width: 300px; /* Optionally set a maximum width to limit size */
+    width: 70%; /* Make the cards take full width on smaller screens */
+    max-width: 400px;
     margin: 0 auto; /* Center the cards on the page */
   }
 }
