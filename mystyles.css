@@ -240,7 +240,8 @@ h2 {
 
 .card-content {
   padding: 15px;
-  flex-grow: 1;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card-title {
@@ -249,6 +250,7 @@ h2 {
 }
 
 .card-description {
+  white-space: normal;
   font-size: 0.9em;
   margin-bottom: 15px;
 }
@@ -270,6 +272,19 @@ h2 {
 
 .icons {
   margin-right: 8px; /* Space between the icon and text */
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech-icons img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 5px 5px;
 }
 
 /* Skills section styles */
@@ -391,7 +406,15 @@ body.dark-mode h2 {
 }
 
 body.dark-mode .navbar {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .navbar a {
+  color: #000;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #626262;
 }
 
 body.dark-mode .mode-toggle {
@@ -434,6 +457,24 @@ body.dark-mode #education {
 
 body.dark-mode .education-entry {
   background-color: #313131;
+}
+
+body.dark-mode #projects {
+  color: #ebebeb;
+}
+
+body.dark-mode .card {
+  background-color: #313131;
+  border: 1px solid #212121;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .card-link {
+  background-color: #767676;
+}
+
+body.dark-mode .card-link:hover {
+  background-color: #626262;
 }
 
 @media (max-width: 768px) {
