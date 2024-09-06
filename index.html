@@ -18,9 +18,6 @@
       rel="stylesheet"
     />
 
-    <!-- Animation library styles-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Font Awesome Icons-->
     <script
       src="https://kit.fontawesome.com/513ac6ecfd.js"
@@ -38,9 +35,9 @@
       <div class="home-container">
         <br />
         <h1>Lana Madsen</h1>
-        <p>
+        <p id="intro">
           Hello! I'm a final year BCIS student at Auckland University of
-          Technology, <br />majoring in Software Development.
+          Technology, majoring in Software Development.
         </p>
 
         <div class="contact-details">
@@ -88,8 +85,54 @@
     <!-- Other sections -->
     <section id="projects" data-aos="fade-up">
       <br /><br />
-      <h2>Projects Section</h2>
+      <h2>My Projects</h2>
       <!-- Content for the Projects section -->
+      <div class="carousel">
+        <div class="carousel-wrapper">
+          <div class="card">
+            <img
+              src="images/delvingthedungeon.jpg"
+              alt="Delving the Dungeon Project Image"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Delving the Dungeon</h3>
+              <p class="card-description">Short description of the project.</p>
+              <a
+                href="https://github.com/GalaxiEchoes/2024_S1_-W102-_DelvingTheDungeon"
+                target="_blank"
+                class="card-link"
+                >
+                <div class="icons">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/taxibooking.png"
+              alt="Taxi Booking System Image"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h3 class="card-title">CabsOnline Taxi Booking System</h3>
+              <p class="card-description">Short description of the project.</p>
+              <a
+                href="https://github.com/lanamads/taxi-booking-system"
+                target="_blank"
+                class="card-link"
+                >
+                <div class="icons">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills section -->
@@ -199,12 +242,12 @@ section to be added later when have relevant work experience
       <i class="fa-solid fa-sun"></i>
     </button>
 
-        <!-- Initialize AOS -->
-        <script>
-          AOS.init({
-            offset: 200,
-            duration: 1000, // Duration of animations in milliseconds
-          });
-        </script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000, // Duration of animations in milliseconds
+      });
+    </script>
   </body>
 </html>

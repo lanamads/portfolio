@@ -12,6 +12,15 @@ body {
   background-color: #fff;
 }
 
+/* Styling for intro paragraph */
+#intro {
+  margin: 0 auto;
+  max-width: 550px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
 /* General styling for headers */
 h1, h2 {
   font-family: 'Roboto', sans-serif;
@@ -191,6 +200,76 @@ h2 {
   color: #333;
   text-align: center;
   padding: 50px;
+}
+
+#projects header {
+  margin-bottom: 20px;
+}
+
+/* Carousel container styling */
+.carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.carousel-wrapper {
+  display: inline-flex;
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #626262;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+  background-color: #333;
+}
+
+.icons {
+  margin-right: 8px; /* Space between the icon and text */
 }
 
 /* Skills section styles */
