@@ -210,17 +210,20 @@ h2 {
 .carousel {
   overflow-x: auto;
   white-space: nowrap;
-  padding: 20px;
+  padding: 20px 20px 20px 0; /* Add padding on the right for a partial card view */
+  scroll-snap-type: x mandatory; /* Enable scroll snapping */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
 }
 
 .carousel-wrapper {
   display: inline-flex;
   gap: 20px; /* Space between cards */
+  padding-right: 100px; /* Add extra padding to the right to hint at more content */
 }
 
 .card {
   width: 400px;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   border: 1px solid #ddd;
@@ -230,6 +233,8 @@ h2 {
   background-color: #fff;
   text-align: center;
   flex-shrink: 0;
+  scroll-snap-align: start; /* Align cards to the start of the scroll */
+  margin-right: 20px; /* Keep the spacing between cards */
 }
 
 .card-image {
@@ -490,5 +495,11 @@ body.dark-mode .card-link:hover {
 
   .education-entry .text-content {
     text-align: center; /* Center-align the text content */
+  }
+
+  .card {
+    width: 90%; /* Make the cards take full width on smaller screens */
+    max-width: 300px; /* Optionally set a maximum width to limit size */
+    margin: 0 auto; /* Center the cards on the page */
   }
 }
