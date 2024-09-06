@@ -348,3 +348,11 @@ body.dark-mode .contact-details i {
 body.dark-mode #skills {
   color: #ebebeb;
 }
+
+body.dark-mode #education {
+  color: #ebebeb;
+}
+
+body.dark-mode .education-entry {
+  background-color: #313131;
+}
