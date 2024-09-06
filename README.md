@@ -1,6 +1,8 @@
 # My Portfolio
 
-Welcome to my portfolio! This website showcases my work and skills as a developer as I complete my Computer Science degree at AUT. Below are the details on the technologies used to build this site and acknowledgments for the libraries and tools integrated.
+Welcome to my portfolio! You can view it live at [https://lanamads.github.io/portfolio/](https://lanamads.github.io/portfolio/).
+
+This website showcases my work and skills as a developer as I complete my Computer Science degree at AUT. Below are the details on the technologies used to build this site and acknowledgments for the libraries and tools integrated.
 
 ## Technologies Used
 
