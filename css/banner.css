@@ -1,0 +1,103 @@
+/* Styling for intro paragraph */
+#intro {
+  margin: 0 auto;
+  max-width: 550px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 20px;
+  color: #ebebeb;
+}
+
+/* Style for the home section (banner) */
+.banner {
+  position: relative;
+  height: 35vh;
+  z-index: 2;
+  background: radial-gradient(ellipse at bottom, #00081b, #010256);
+  text-align: center;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+.home-container {
+  position: relative; /* Ensure the text container stays in place */
+  z-index: 2;
+}
+
+/* Star Styling on banner */
+.dot {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(-45deg, #fffee8, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #fff);
+  animation: tail 3s ease-in-out infinite, falling 3s ease-in-out;
+}
+
+@keyframes tail {
+  0% {
+    width: 0px;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  100% {
+    transform: translate(400px, 200px) rotate(45deg);
+  }
+}
+
+.star::before,
+.star::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #fffee8,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3s ease-in-out infinite;
+}
+
+@keyframes shining {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}

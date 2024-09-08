@@ -1,0 +1,42 @@
+/* Style for links to github, mail and linkedin pages */
+.contact-details {
+  margin-top: 50px;
+}
+
+.contact-details ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-details li {
+  margin: 0 10px;
+}
+
+.contact-details .icons {
+  background: #001d53;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.contact-details .icons:hover {
+  background: #000f34;
+}
+
+.contact-details i {
+  font-size: 1.5rem;
+  color: #ebebeb;
+}
+
+.contact-details a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

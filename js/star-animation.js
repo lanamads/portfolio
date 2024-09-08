@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".banner");
 
   // Number of randomly scattered dots
-  const numberOfDots = 50; 
+  const numberOfDots = 50;
 
   // Create and scatter the dots
   const scatterDots = () => {
@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const dots = document.querySelectorAll(".dot");
     dots.forEach((dot) => {
       if (checkProximity(dot, e.clientX, e.clientY)) {
-        if (dot.style.opacity !== "0") { // Only trigger if the dot is visible
+        if (dot.style.opacity !== "0") {
+          // Only trigger if the dot is visible
           dot.style.opacity = 0; // Hide the dot
           addStarAnimation(dot); // Add star animation
         }

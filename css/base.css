@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset default margin and padding for the body */
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #fff;
+}
+
+/* General styling for headers */
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0; /* Margin for spacing */
+  text-align: center; /* Center the text */
+}
+
+/* Specific styling for h1 */
+h1 {
+  color: #ebebeb;
+  font-size: 2.5rem; /* Larger font size for main headings */
+  font-weight: 700; /* Bold font weight */
+  letter-spacing: 1px; /* Slight letter spacing for readability */
+}
+
+/* Specific styling for h2 */
+h2 {
+  color: #333; /* Dark text color for readability */
+  font-size: 2rem; /* Slightly smaller font size for subheadings */
+  font-weight: 500; /* Medium font weight */
+  letter-spacing: 0.5px; /* Slight letter spacing for readability */
+  margin-bottom: 30px; /* Extra margin below the heading */
+}

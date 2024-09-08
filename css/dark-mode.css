@@ -1,0 +1,93 @@
+/* Mode toggle button styling */
+.mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mode-toggle i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.mode-toggle:hover {
+  background-color: #afc6ff;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #000000;
+  color: #ebebeb;
+}
+
+body.dark-mode h2 {
+  color: #ebebeb;
+}
+
+body.dark-mode .navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .navbar a {
+  color: #000;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #626262;
+}
+
+body.dark-mode .mode-toggle {
+  background-color: #000000;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.6); /* white shadow */
+}
+
+body.dark-mode .mode-toggle i {
+  color: #fff;
+}
+
+body.dark-mode .mode-toggle:hover {
+  background-color: #001d53;
+  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode #skills {
+  color: #ebebeb;
+}
+
+body.dark-mode #education {
+  color: #ebebeb;
+}
+
+body.dark-mode .education-entry {
+  background-color: #313131;
+}
+
+body.dark-mode #projects {
+  color: #ebebeb;
+}
+
+body.dark-mode .card {
+  background-color: #313131;
+  border: 1px solid #212121;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .card-link {
+  background-color: #767676;
+}
+
+body.dark-mode .card-link:hover {
+  background-color: #626262;
+}
